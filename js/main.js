@@ -33,7 +33,7 @@ function randomStr() {
 
 function setColor() {
 	// log("fun1");
-	return new Promise((resolve, reject) => {
+	new Promise((resolve, reject) => {
 		setTimeout(resolve(randomColor()), randomNum(2000, 1000));
 	}).then(color=>{
 		const body = document.querySelector('body');
@@ -45,7 +45,7 @@ function setColor() {
 function setString() {
 	// the main will have more and more sting in it
 	// we can reset the content to each time have a single one
-	return new Promise((resolve, reject) => {
+	new Promise((resolve, reject) => {
 		setTimeout(resolve(randomStr()), randomNum(2000, 1000));
 	}).then(str=>{
 		const main = document.querySelector('main');
